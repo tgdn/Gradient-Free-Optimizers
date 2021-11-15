@@ -7,6 +7,7 @@ from .local import (
     StochasticHillClimbingOptimizer,
     RepulsingHillClimbingOptimizer,
     SimulatedAnnealingOptimizer,
+    GridSearchOptimizer,
 )
 
 from .random import (
@@ -14,7 +15,6 @@ from .random import (
     RandomRestartHillClimbingOptimizer,
     RandomAnnealingOptimizer,
 )
-
 
 from .population import (
     ParallelTemperingOptimizer,
@@ -34,6 +34,7 @@ __all__ = [
     "StochasticHillClimbingOptimizer",
     "RepulsingHillClimbingOptimizer",
     "SimulatedAnnealingOptimizer",
+    "GridSearchOptimizer",
     "RandomSearchOptimizer",
     "RandomRestartHillClimbingOptimizer",
     "RandomAnnealingOptimizer",

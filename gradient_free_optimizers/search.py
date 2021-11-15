@@ -188,7 +188,9 @@ class Search(TimesTracker):
 
         # get init positions
         init = Initializer(self.conv)
+        print("Init:", init)
         self.init_positions = init.set_pos(self.initialize)
+        print(self.init_positions)
 
         if isinstance(memory, DictProxy):
             mem = Memory(memory_warm_start, self.conv, dict_proxy=memory)
