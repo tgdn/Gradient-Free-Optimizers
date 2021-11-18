@@ -42,6 +42,13 @@ class BaseOptimizer(SearchTracker):
             position.append(pos_)
 
         return np.array(position)
+    
+    def move_grid_search(self):
+        position = []
+        #TODO: figure out how to move in the grid
+        #cannot precalculate all the possible combinations of the grid
+        
+        return np.array(position)
 
     def track_nth_iter(func):
         def wrapper(self, *args, **kwargs):

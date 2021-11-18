@@ -14,7 +14,7 @@ class GridSearch(BaseOptimizer, Search):
         initialize={"grid": 4, "random": 2, "vertices": 4},
     ):
         super().__init__(search_space, initialize)
-
+    
     @BaseOptimizer.track_nth_iter
     def iterate(self):
-        return self.move_random()
+        return self.move_grid_search()
